@@ -15,6 +15,8 @@ Before running the script, make sure you have the following dependencies install
 - requests library (install using `pip install requests`)
 - Microsoft Edge WebDriver (download the appropriate version for your Edge browser and specify the path in the script)
 
+Or
+- requirements.txt (install using `pip install -r requirements.txt`)
 ## How to Use
 
 1. Clone this repository or copy the script to your local machine.
