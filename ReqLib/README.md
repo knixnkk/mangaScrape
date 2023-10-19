@@ -23,5 +23,6 @@ Before using this script, make sure you have the following prerequisites install
 
 ```bash
 pip install requests beautifulsoup4 pillow img2pdf aiohttp fake_useragent
+```
 
 __Don't forget to create 4 folder name chapter, images, pdf, store__
