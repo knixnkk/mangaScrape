@@ -11,6 +11,8 @@ The script also uses a few other Python libraries, including:
  - `psutil`: This library provides information about running processes.
  - `aiohttp`: This library is used to download the images asynchronously.
  - `img2pdf`: This library is used to convert the images to PDF.
+
+
 Features:
 
  - Download images from a web page using Selenium
