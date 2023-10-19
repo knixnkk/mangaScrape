@@ -1,43 +1,29 @@
-# Cartoon reading Scrape
+#Web Scraping and Image Conversion Scripts
 
-This repository contains a Python script designed to download, convert, and merge images from a specific website into PDF files. The script utilizes the Selenium library for web automation and some image processing libraries for image-to-PDF conversion.
+__This repository contains two Python scripts for web scraping, image downloading, conversion to PDF, and file organization. Each script serves a different purpose and utilizes different libraries. Below, you'll find a brief summary of each script's functionality:__
 
-Please note that this script was written with specific assumptions about the target website and may require customization if used for other websites.
+##Script 1: Web Scraping with BeautifulSoup and Asynchronous Image Conversion
+__
+This script uses libraries such as requests, BeautifulSoup, and aiohttp for web scraping.
 
-## Prerequisites
+It extracts JSON data from web pages and processes it to collect image URLs.
 
-Before running the script, make sure you have the following dependencies installed:
+The script organizes the generated PDF files into folders based on chapter titles.
 
-- Python (version 3.x)
-- Selenium library (install using `pip install selenium`)
-- Pillow library (install using `pip install pillow`)
-- img2pdf library (install using `pip install img2pdf`)
-- requests library (install using `pip install requests`)
-- Microsoft Edge WebDriver (download the appropriate version for your Edge browser and specify the path in the script)
+Asynchronous image downloading and conversion are handled using aiohttp.
+__
+##Script 2: Selenium-Based Web Scraping and Image Handling
+__
+Script 2 uses Selenium for web scraping and interaction with web pages.
 
-Or
-- requirements.txt (install using `pip install -r requirements.txt`)
-## How to Use
+It scrolls down web pages, selects chapters, and collects image URLs.
 
-1. Clone this repository or copy the script to your local machine.
-2. Make sure you have fulfilled the prerequisites mentioned above.
-3. Set the `url` variable in the script to the URL of the specific chapter you want to download images from.
-4. Set the path for the Edge WebDriver (`executable_path`) to the correct location on your machine.
-5. Run the script using the Python interpreter.
+The script handles page navigation, chapter selection, and checks if the Microsoft Edge browser process is running.
 
-Please ensure that you comply with the website's terms of service and avoid excessive scraping to avoid any legal issues.
+Retries are managed in case of errors, and image extensions are checked.
 
-## Script Workflow
+These scripts are designed for specific use cases and may require customization to work with different websites or scenarios. They demonstrate various techniques for web scraping, image handling, and file organization in a scripted environment.
 
-1. The script loads the target URL and scrolls down to load all available chapters.
-2. It extracts the chapter URLs and their corresponding titles and stores them in a dictionary.
-3. Starting from the specified chapter (`start_compare`), the script loops through each chapter:
-   - It opens the chapter URL and clicks on the reader area to reveal the images.
-   - It downloads each image and converts it to JPG format.
-   - It scrolls to each image's position on the page and captures a screenshot to convert to a PDF file.
-   - It merges all the PDF files of a chapter into a single PDF file.
-   - It repeats this process for subsequent chapters until it encounters a chapter with a number lower than the specified `start_compare`, at which point the script exits.
-
-
-## Contact
-- Discord : shiii#5276
+Feel free to explore each script for more details and to adapt them to your specific needs.
+__
+###Note: Be sure to review the requirements for each script, including necessary Python libraries and web drivers.
