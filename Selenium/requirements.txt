@@ -1,0 +1,7 @@
+certifi
+colorama
+img2pdf
+Pillow
+requests
+selenium
+PyPDF2

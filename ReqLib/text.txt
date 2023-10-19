@@ -1,0 +1,5 @@
+{
+    "url": "https://www.kuro-manga.com/manga/life-of-a-war-emperor-after-retirement/ep-1/",
+    "_comment": "test.py : Kuro-manga",
+    "_comment2": "main.py : lami-manga, manga168, reapertrans, manga-za"
+}
